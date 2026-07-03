@@ -820,14 +820,32 @@ footer a{color:var(--cyan);text-decoration:none;}
   <div class="section-tag">// Work</div>
   <h2 class="section-title">Projects</h2>
   <div class="reveal">
+
+    <div class="glass-card project-card tilt-card">
+      <div class="project-name">🤖 Agentic Insurance Claims System</div>
+      <div class="project-period">September 2025 – December 2025</div>
+      <p class="project-desc">A multi-agent LLM pipeline (LangGraph) that takes a raw insurance claim — text + photos — and walks it through validation, fraud forensics, and settlement scoring with zero manual triage.</p>
+      <ul class="project-bullets">
+        <li><strong>Agent 1 — Intake & Policy Validation:</strong> Parses the incoming claim text, pulls a 3-claim RAG timeline for context, validates it against policy coverage, and hands off any attached photos for forensic review.</li>
+        <li><strong>Agent 2 — Photo Forensics:</strong> Runs the images through Gemini Vision, checks them against a PostgreSQL history to catch reused/duplicate photos, and verifies the image content actually matches the claim description before letting the claim proceed.</li>
+        <li><strong>Agent 3 — Settlement Scoring:</strong> Once the claim clears validation and forensics, computes a settlement score with a full explainable decision trace — achieving 94% approval accuracy and 89% fraud detection precision.</li>
+        <li><strong>Orchestration:</strong> Built the entire sequential agentic workflow into a Streamlit platform, automating 85% of manual review workload across 100+ monthly claims.</li>
+      </ul>
+      <div class="project-tags">
+        <span class="project-tag">LangGraph</span><span class="project-tag">LLM Agents</span><span class="project-tag">Gemini Vision</span>
+        <span class="project-tag">PostgreSQL</span><span class="project-tag">RAG</span><span class="project-tag">Streamlit</span>
+      </div>
+      <a href="https://github.com/Srikrishna-data" target="_blank" class="project-link">↗ View on GitHub</a>
+    </div>
+
     <div class="glass-card project-card tilt-card">
       <div class="project-name">🏎️ Formula 1 Data Lakehouse</div>
       <div class="project-period">Dec 2025 – Apr 2026</div>
-      <p class="project-desc">End-to-end data lakehouse on Databricks for F1 race analytics — fully automated metadata-driven pipeline with zero-touch Tableau dashboards.</p>
+      <p class="project-desc">End-to-end data lakehouse on Databricks for F1 race analytics — raw CSVs go in one end, zero-touch Tableau dashboards come out the other.</p>
       <ul class="project-bullets">
-        <li>Engineered metadata-driven ingestion on Databricks — matched 5+ CSV sources against a control table and auto-loaded as Delta tables; reduced new source onboarding to a single metadata row.</li>
-        <li>Designed Medallion Architecture with a star schema: 5 dimension tables + 1 fact table with 35+ analytical measures for idempotent, incremental loads.</li>
-        <li>Orchestrated full pipeline via Databricks Jobs → Tableau export notebook for fully automated, zero-touch F1 performance dashboards.</li>
+        <li><strong>Ingestion:</strong> Engineered metadata-driven ingestion on Databricks — new sources are matched against a control table and auto-loaded as Delta tables, so onboarding a new feed is a single metadata row instead of new code.</li>
+        <li><strong>Modeling:</strong> Refined raw data through a Medallion Architecture into a star schema — 5 dimension tables + 1 fact table with 35+ analytical measures — built for idempotent, incremental loads.</li>
+        <li><strong>Automation:</strong> Orchestrated the full pipeline end-to-end via Databricks Jobs into a Tableau export notebook, delivering fully automated, zero-touch F1 performance dashboards.</li>
       </ul>
       <div class="project-tags">
         <span class="project-tag">Databricks</span><span class="project-tag">PySpark</span><span class="project-tag">Delta Lake</span>
@@ -835,12 +853,12 @@ footer a{color:var(--cyan);text-decoration:none;}
       </div>
       <a href="https://github.com/Srikrishna-data" target="_blank" class="project-link">↗ View on GitHub</a>
     </div>
+
   </div>
   <div style="margin-top:24px;text-align:center;">
     <a href="https://github.com/Srikrishna-data" target="_blank" class="btn-ghost" style="display:inline-flex;">View All Repos on GitHub ↗</a>
   </div>
 </section>
-
 <div class="divider"></div>
 
 <!-- ============================================================
@@ -957,7 +975,7 @@ footer a{color:var(--cyan);text-decoration:none;}
         <div><div class="c-label">GitHub</div><div class="c-val">Srikrishna-data</div></div>
         <span class="c-arrow">↗</span>
       </a>
-      <a href="Sri_Krishna_Resume_DE_2026.pdf" download class="glass-card contact-link">
+      <a href="Sri_Krishna_Loganathan_resume.pdf" download class="glass-card contact-link">
         <div class="c-icon">📄</div>
         <div><div class="c-label">Resume</div><div class="c-val">Download PDF</div></div>
         <span class="c-arrow">⬇</span>
